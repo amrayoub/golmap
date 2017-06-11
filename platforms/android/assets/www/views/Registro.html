@@ -1,0 +1,84 @@
+<ion-view style="" id="page12" class = "ImagenRegistro2"  title="Registro" >
+    <ion-content class=""  padding="true">
+       <form name="myForm" ng-controller="ExampleController">
+            
+            
+            <label class="item item-input item-stacked-label forminput" >
+                <span class="input-label input-label-registro">Nombre</span>
+                <input type="text" name="Nombres" placeholder="Nombres" ng-model="cliente.nombres" required>
+            </label>
+            <div role="alert">
+            <span class="error" ng-show="myForm.Nombres.$error.required">
+              Requerido!</span>
+            </div>
+
+            <label class="item item-input item-stacked-label forminput" >
+                <span class="input-label input-label-registro">Apellido</span>
+                <input type="text"  name="Apellidos" placeholder="Apellidos" ng-model="cliente.apellidos" required>
+            </label>
+            <div role="alert">
+            <span class="error" ng-show="myForm.Apellidos.$error.required">
+              Requerido!</span>
+            </div>
+            
+            
+            <label class="item item-input item-stacked-label forminput" >
+                <span class="input-label input-label-registro">Mail</span>
+                <input type="email" name="Mail" placeholder="Mail" ng-model="cliente.mail" required>
+            </label>
+            <div role="alert">
+            <span class="error" ng-show="myForm.Mail.$error.required">
+              Requerido!</span>
+            <span class="error" ng-show="myForm.Mail.$error.email">
+              Por favor ingrese un E-Mail valido!</span>
+            </div>
+            
+            
+           
+            <label class="item item-input item-stacked-label forminput">
+                <span class="input-label input-label-registro">Celular</span>
+                <input type="text" name="Celular" placeholder="Celular" ng-model="cliente.celular" required>
+            </label>   
+            <div role="alert">
+            <span class="error" ng-show="myForm.Celular.$error.required">
+              Requerido!</span>
+            </div>
+            
+
+
+            <label class="item item-input item-stacked-label forminput">
+                <span class="input-label input-label-registro">Contraseña</span>
+                <input type="password" name="contrasena" placeholder="Contraseña" ng-model="cliente.contrasena" required>
+            </label>
+            <div role="alert">
+            <span class="error" ng-show="myForm.contrasena.$error.required">
+              Requerido!</span>
+            </div>
+
+             <label class="item item-input item-stacked-label forminput">
+                <span class="input-label input-label-registro">Confirma tu contraseña</span>
+                <input type="password" name="contrasenaconfirma" placeholder="Confirma tu contraseña" ng-model="cliente.contrasenaconfirma" required>
+            </label>
+             <div role="alert">
+            <span class="error" ng-show="myForm.contrasenaconfirma.$error.required">
+              Requerido!</span>
+            </div>
+
+
+
+            <div class="row" >      
+                   <div class="col col-50" style="text-align: -webkit-center;">
+                      <button type="button"  id="registrar"  ng-click="crear()"><span class="glyphicon glyphicon-ok"></span> Ingresar</button> 
+                	</div>
+              
+                <div class="separador">  </div>
+              
+                  <div class="col col-50" style="text-align: -webkit-center;" >
+                      <button type="button"  id="cancelar"  ng-click="limpiar()"><span class="glyphicon glyphicon-ok"></span> Ingresar</button> 
+                	</div>   
+            </div>
+
+
+         </form>
+    </ion-content>
+</ion-view>

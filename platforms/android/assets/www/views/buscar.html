@@ -1,0 +1,75 @@
+<ion-view  id="page1" class="BuscarP" title="Inicio" >
+    <ion-content  >
+            
+             <div class="row ">
+                 <div class="col col-25 ban">
+                    <div  >
+                        <img class="imglogopantalla" style="" src="img/banderin.png" height="auto" width="auto">
+                   </div>
+                 </div>
+                 <div class="col col-50" style="float: inherit;margin-top: 8%;margin-left: 5%;">
+                    <div  class="imglogo2">
+                       <img class="imglogopantalla" style="" src="img/BotonesMenu/busca.png" height="auto" width="auto">
+                   </div>
+                 </div>
+                  <div class="col col-75  palabramenumargin">
+                    <button type="button"  id="palabramenu"  ng-click="regresar()"><span class="glyphicon glyphicon-ok"></span> Ingresar</button> 
+                  </div>
+             </div>
+            
+            <div class="input-label" id="labelcomboletra">
+                 Sector
+                </div>
+            <div class="list" id="divcombo">
+              <label for="SectorSeleccionada" class="item item-input item-select labelcombo">
+                 <select  ng-init="buscar.sector = sectores[0]" id="comboestilo"  ng-model="buscar.sector"
+                 ng-options="provincia as provincia.nombre for provincia in sectores track by provincia.idsector">
+                </select>
+              </label>
+            </div>
+            
+            <div class="input-label" id="labelcomboletra">
+                 Dia
+                </div>
+            <div class="list" id="divcombo">
+              <ion-item class="item-input labelcombo">
+                  
+                   
+                    <input  style="text-align: -webkit-center;" type="date" ng-model="buscar.fecha">
+                  </label>
+              </ion-item>
+            </div>
+            
+            <div class="input-label" id="labelcomboletra">
+                 Hora Inicio
+                </div>
+            <div class="list" id="divcombo">
+              <label class="item item-input item-select labelcombo">
+                 <select ng-init="buscar.horainicio = horainicio[25]" id="comboestilo"  ng-model="buscar.horainicio"
+                 ng-options="opt as opt.nombre for opt in horainicio"
+                 >
+                </select>
+              </label>
+            </div>
+            
+             <div class="input-label" id="labelcomboletra">
+                 Hora Fin
+            </div>
+            <div class="list" id="divcombo">
+              <label for="horafinSeleccionada" class="item item-input item-select labelcombo">
+                 <select ng-init="buscar.horafin = horafin[25]" id="comboestilo" name="singleSelect" ng-model="buscar.horafin"
+                 ng-options=" hf as hf.nombre for hf in horafin track by hf.idhorafin">
+                </select>
+              </label>
+            </div>
+            
+      
+         <div class="row" style="text-align: -webkit-right;">   
+           <div class="col ">
+                    <button type="button"  id="realizatubusqueda"  ng-click="buscarCanchas()"><span class="glyphicon glyphicon-ok"></span> Ingresar</button> 
+           </div>
+         </div>
+           
+            
+    </ion-content>
+</ion-view>

@@ -1,0 +1,66 @@
+<ion-view  id="page1" class="InformacionP" title="Inicio" >
+    <ion-content  >      
+             <div class="row ">
+                 <div class="col col-25 ban">
+                    <div  >
+                        <img class="imglogopantalla" style="" src="img/banderin.png" height="auto" width="auto">
+                   </div>
+                 </div>
+             </div>
+            
+
+            <div style="background: white;width: 90%;float: inherit;margin-left: 5%;">
+              <div class="row" >      
+                    <div class="col col-50" style="text-align: -webkit-left;">
+                       <div ng-bind-html="informacionC[0].logo"></div>
+                   </div>
+               <div class="separador">  </div>
+                   <div class="col col-50" style="text-align: -webkit-right;" >
+                     <div ng-bind-html="informacionC[0].horarioatencion"></div>
+                   </div>   
+             </div>
+             
+             <div class="row" >      
+                <div class="col col-50" style="text-align: -webkit-left;">
+                   <div ng-bind-html="informacionC[0].direccion" ></div>
+               </div>
+               <div class="separador">  </div>
+               
+               <div class="col col-50" style="text-align: -webkit-right;" >
+                 <div ng-bind-html="informacionC[0].Sector"></div>
+               </div>   
+             </div>
+
+
+               <div class="row" >      
+                <div class="col col-20" style="text-align: -webkit-left;">
+                  <img src="img/direccion.png" height="auto" width="auto">
+               </div>
+               <div class="separador">  </div>
+               
+               <div class="col col-80" style="text-align: -webkit-right; -webkit-right;border-left: 2px solid #f4d66f;"  >
+                 <div ng-bind-html="informacionC[0].Sector"></div>
+               </div>   
+             </div>
+
+
+
+
+
+            </div>
+             
+
+
+
+             <div class="row" >      
+               <div class="col col-50" >
+                  <button type="button"  id="regresaitem"  ng-click="RegresItem()"><span class="glyphicon glyphicon-ok"></span> Ingresar</button> 
+                </div>
+              
+              <div class="separador">  </div>
+              
+          
+          
+              </div>
+    </ion-content>
+</ion-view>
