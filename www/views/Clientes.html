@@ -1,0 +1,57 @@
+ <ion-view style="" id="page3" class = "ImagenRegistro" title="Menu">
+    <ion-content class="" padding="true">
+   
+        <div class="row hprimera">
+                 <div class="col col-50">
+                      <div id="Heigth3">
+                       BIENVENIDO 
+                      </div>
+                  </div>
+                  <div class="col col-50">
+                      <div ui-sref="CrearPerfil" id="lbl_usuario_b" class="labellogin">
+                       {{menu.nombre | uppercase}}
+                      </div>
+                  </div>
+        </div>
+     <div style="text-align:center;" class="imglogo2">
+                <img style="" src="img/logoA.png" height="auto" width="auto">
+            </div>
+   
+   <div class = "menuprincipal">
+    <div class="row" style="text-align: -webkit-center;  ">
+                  <div class="col col-50">
+                      <button type="button"  id="busca"  ng-click="buscar()"><span class="glyphicon glyphicon-ok"></span> Ingresar</button> 
+                  </div>
+              
+                  <div class="col col-50">
+                    <button type="button"  id="perfil"  ng-click="perfil()"><span class="glyphicon glyphicon-ok"></span> Ingresar</button> 
+                  </div>
+                  
+        </div>
+    
+      <div class="row" style="text-align: -webkit-center;  ">
+                  <div class="col col-50">
+                    <button type="button"  id="invita"  ng-click="invita()"><span class="glyphicon glyphicon-ok"></span> Ingresar</button> 
+                  </div>
+        
+    
+              <div class="col col-50">
+                    <button type="button"  id="canchasafiliadas"  ng-click="canchastodas()"><span class="glyphicon glyphicon-ok"></span> Ingresar</button> 
+                  </div>
+                  
+      </div>
+      <div class="row" style="float: inherit;margin-left: 30%;  margin-top: -5%;">
+                  <div class="col col-50">
+                    <button type="button"  id="promociones"  ng-click="promociones()"><span class="glyphicon glyphicon-ok"></span> Ingresar</button> 
+                  </div>
+                  
+      </div>     
+   </div>
+      <div style="text-align: -webkit-right;">
+                        <button type="button"  id="salir"  ng-click="Salir()"><span class="glyphicon glyphicon-ok"></span> Ingresar</button> 
+      </div>
+       
+       
+    </ion-content>
+</ion-view>
+ 

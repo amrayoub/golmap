@@ -1,0 +1,191 @@
+<!-- <ion-view style=""  title="Productos">
+    <ion-content class="has-header" padding="true">
+  				<div ng-controller="exerciseTypeCtrl" id="ComboProducto">
+             
+                       <label style="" class="item item-select LabelCombo">
+                			<span class="input-label">Tipo Producto</span>
+                            <select 
+                            id="exerciseSuperCategory" 
+                            data-role="listview" 
+                            ng-options="catagory as catagory.text for catagory in catagories.cast " 
+                            ng-model="itemsuper" 
+                            ng-change="changeData()">
+                            </select>
+                          </label>
+                     <label style="" class="item item-select LabelCombo">
+                			<span class="input-label">Producto</span>
+                            <select 
+                            data-role="listview" 
+                            ng-options="type as type.text for type in types.cast " 
+                            ng-model="item1" 
+                            ng-change="update()">
+                            </select>
+                       </label>
+                
+             </div>  	
+
+			<div class="row">
+			  <div class="col">
+			  	 <a class="item item-thumbnail-left" ng-click="Detalles()">
+			      <img src="img/product.jpg">
+			      <h2>Pretty Hate Machine</h2>
+			      <p>Nine Inch Nails</p>
+			    </a>
+
+			  </div>
+			  <div class="col">
+			  	
+ 				<a class="item item-thumbnail-left" ng-click="Detalles()">
+			      <img src="img/product.jpg">
+			      <h2>Pretty Hate Machine</h2>
+			      <p>Nine Inch Nails</p>
+			    </a>
+			  </div>
+			</div>
+
+
+			<div class="row">
+	
+  			<div class="col">
+			  		<a class="item item-thumbnail-left" ng-click="Detalles()">
+			      <img src="img/product.jpg">
+			      <h2>Pretty Hate Machine</h2>
+			      <p>Nine Inch Nails</p>
+			    </a>
+
+			  </div>
+			  <div class="col">
+			  		<a class="item item-thumbnail-left" ng-click="Detalles()">
+			      <img src="img/product.jpg">
+			      <h2>Pretty Hate Machine</h2>
+			      <p>Nine Inch Nails</p>
+			    </a>
+
+			  </div>
+			</div>
+    </ion-content>
+</ion-view> -->
+<ion-slide-box on-slide-changed="slideHasChanged($index)">
+  <ion-slide class="sliderborder">
+
+
+ <br><br>
+
+ <div class="list card">
+ <br><br>
+ <div class="bar bar-header bar-light "  style="border: none;margin-top: 12px;float: inherit;margin-left: 58%; width: 50%;">
+        <label>Buscar Producto </label>
+        <label class="item item-input" id="buscar">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="text" placeholder="Buscar Producto" >
+        </label>
+    </div>
+   <div class="item item-avatar borderslider">
+	    <img src="img/pavo.png">
+	    <h2>Pavo</h2>
+	    <p>Categoria:Alimentos</p>
+	    <p>Otra Descripcion</p>
+    </div>
+
+   <div class="item item-body"  id="ImagenConten">
+	    <img class="full-image" src="img/pavo.png">
+	    <p>
+	     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar quis massa quis luctus. Sed consequat porttitor justo, non dictum lectus commodo vitae.
+	    </p>
+   </div>
+
+   <div class="item item-body"  id="ImagenConten">
+	    <p>
+	     CANTIDAD
+	    </p>
+   </div>
+
+
+
+   <div id="DescripcionConten" >
+	   <div class="item item-input" id="DescripcionContentChild" >
+		     <div id="InputCantidad">
+		     	<input type="number" placeholder="Cantidad" ng-model="cliente.cantidad">
+		     </div>
+		   <!--   <div id="ButtonNumbre">
+		    <ionic-numberpicker input-obj="numberPickerObject">
+		      <button class="button button-positive order-button">
+		        <i class="ion-archive"></i>
+		      </button>
+		    </ionic-numberpicker>
+		    </div> -->
+
+		</div>
+		<div id="ButtonAgregar" >
+			<button type="button" class="button button-positive " ng-click="save()"><span class="glyphicon glyphicon-ok"></span> Agregar Carrito</button> 
+			 <br><br>
+	</div>
+  	</div>
+ 
+ </div>
+  </ion-slide>
+  
+
+
+  <ion-slide class="sliderborder">
+ <br><br>
+
+ <div class="list card">
+ <br><br>
+   <div class="bar bar-header bar-light "  style="border: none;margin-top: 12px;float: inherit;margin-left: 58%; width: 50%;">
+        <label>Buscar Producto </label>
+        <label class="item item-input" id="buscar">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="text" placeholder="Buscar Producto" >
+        </label>
+    </div>
+   <div class="item item-avatar borderslider">
+	    <img src="img/pilsener.jpg">
+	    <h2>Pilsener</h2>
+	    <p>Categoria:Alcohol</p>
+	    <p>Otra Descripcion</p>
+    </div>
+
+   <div class="item item-body"  id="ImagenConten">
+	    <img class="full-image" src="img/pilsener.jpg">
+	    <p>
+	     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar quis massa quis luctus. Sed consequat porttitor justo, non dictum lectus commodo vitae.
+	    </p>
+   </div>
+
+   <div class="item item-body"  id="ImagenConten">
+	    <p>
+	     CANTIDAD
+	    </p>
+   </div>
+
+   
+   <div id="DescripcionConten" >
+	   <div class="item item-input" id="DescripcionContentChild" >
+		     <div id="InputCantidad">
+		     	<input type="number" placeholder="Cantidad" ng-model="cliente.cantidad2">
+		     </div>
+		   <!--   <div id="ButtonNumbre">
+		    <ionic-numberpicker input-obj="numberPickerObject">
+		      <button class="button button-positive order-button">
+		        <i class="ion-archive"></i>
+		      </button>
+		    </ionic-numberpicker>
+		    </div> -->
+
+		</div>
+		<div id="ButtonAgregar" >
+			<button type="button" class="button button-positive " ng-click="save()"><span class="glyphicon glyphicon-ok"></span> Agregar Carrito</button> 
+			 <br><br>
+	</div>
+  	</div>
+ 
+ </div>
+  </ion-slide>
+
+
+
+
+</ion-slide-box>
+
+

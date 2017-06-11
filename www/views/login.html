@@ -1,0 +1,62 @@
+<ion-view  id="page1" class="loginP" title="Inicio" >
+    <ion-content class="login"   padding="true">
+        <form style="" class="list" >
+            <div style="text-align:center;" class="imglogo">
+                <img style="" src="img/logoA.png" height="auto" width="auto">
+            </div>
+            <div id="blockinput_n"  style="margin-top: 5%;">
+              <div class="row">
+                  <div style="width: 40%;">
+                      <div id="lbl_usuario" class="labellogin">
+                       CORREO
+                      </div>
+                  </div>
+              
+                  <div class="col col-85">
+                    <label style="" class="item item-input ">
+                         <i class="placeholder-icon"></i>
+                        <input type="text"  ng-model="cliente.usuario">
+                    </label> 
+                  </div>
+              </div>
+              <div class="row">
+                  <div style="width: 40%;">
+                      <div id="lbl_clave" class="labellogin">
+                       CLAVE
+                      </div>
+                  </div>
+              
+                  <div class="col col-85">
+                    <label style="" class="item item-input ">
+                      <i class="placeholder-icon"></i>
+                      <input type="password"  ng-model="cliente.contrasena">
+                    </label>
+                  </div>
+              </div>
+            </div>
+            
+            
+             <div class="row" >      
+              
+              
+               <div class="col col-50" style="text-align: -webkit-left;">
+                  <button type="button"  id="crearcuenta"  ng-click="Ingresar()"><span class="glyphicon glyphicon-ok"></span> Ingresar</button> 
+              	</div>
+              
+              <div class="separador">  </div>
+              
+              <div class="col col-50" style="text-align: -webkit-right;" >
+                  <button type="button"  id="buttoniniciarsesion"  ng-click="Registro()"><span class="glyphicon glyphicon-ok"></span> Ingresar</button> 
+              	</div>
+               
+              </div>
+             
+            <!--  <div id= "registrategoogle" > registrate con:  </div>
+             
+            <div class="buttongoogle">
+              <button type="button"  id="google"  ng-click="Registro()"><span class="glyphicon glyphicon-ok"></span> Ingresar</button> 
+            </div>-->
+             
+        </form>
+    </ion-content>
+</ion-view>

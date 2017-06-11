@@ -1,0 +1,30 @@
+<ion-view  id="page1" class="Promociones" title="Inicio" >
+    <ion-content  >       
+                 <script id="image-modal.html" type="text/ng-template">
+              <div class="modal image-modal transparent" ng-click="closeModal()">
+                  <ion-pane class="transparent">
+                     <img ng-src="{{imageSrc}}" class="fullscreen-image"/>
+                  </ion-pane>
+              </div>
+          </script>
+
+ <ion-gallery ion-gallery-items="items" ion-gallery-row="5"></ion-gallery>
+
+    <div class='list' >
+      <div class="item row positive item-button-right" 
+            ng-repeat="promociongol in promociongolmap | orderBy:'promociongol.tid' track by promociongol.tid" 
+            item="promociongol" style="background: transparent;border: none;width: 50%;float: left;">
+
+            <div class="col"  >
+                 <div ng-bind-html="promociongol.Imagendepromocion" ng-click="showImage(promociongol.Imagendepromocion)"></div>
+            </div> 
+      </div>
+    </div>
+       <div class="row ">
+                  <div class="col col-75  ">
+                    <button type="button"  id="palabramenu2"  ng-click="regresar()"><span class="glyphicon glyphicon-ok"></span> Ingresar</button> 
+                  </div>
+             </div>  
+
+    </ion-content>
+</ion-view>
