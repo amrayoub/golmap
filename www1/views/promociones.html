@@ -1,0 +1,111 @@
+<ion-view  id="page1" class="Promociones" title="Inicio" >
+    <ion-content  >
+            
+             <div class="row ">
+                 <div class="col col-25 ban">
+                    <div>
+                        <img class="imglogopantalla" style="" src="img/banderin.png" height="auto" width="auto">
+                   </div>
+                 </div>
+                 <div class="col col-50" style="float: inherit;margin-top: 8%;margin-left: 5%;">
+                    <div  class="imglogo2">
+                       <img class="imglogopantalla" style="" src="img/BotonesMenu/promociones.png" height="auto" width="auto">
+                   </div>
+                 </div>
+                  <div class="col col-75  palabramenumargin">
+                    <button type="button"  id="palabramenu"  ng-click="regresar()"><span class="glyphicon glyphicon-ok"></span> Ingresar</button> 
+                  </div>
+             </div>
+ 
+          <div class="row" >
+                  <div class="col col-33">
+                    <button type="button"  class=" button button-full button-positive "  ng-click="promogolmap()"> GolMap</button> 
+                  </div>
+        
+    
+                 <div class="col col-33">
+                    <button type="button"  class=" button button-full button-calm "  ng-click="promocancha()"> Canchas</button> 
+                  </div>
+                  
+                     <div class="col col-33">
+                    <button type="button"  class=" button button-full button-balanced "  ng-click="promootro()"> Otros</button> 
+                  </div>
+         </div>
+
+ <ion-gallery ion-gallery-items="items" ion-gallery-row="5"></ion-gallery>
+
+    <div class='list' >
+      <div class="item row positive item-button-right" 
+            ng-repeat="promociongol in promociongolmap | orderBy:'promociongol.tid' track by promociongol.tid" 
+            item="promociongol" style="background: transparent;border: none;width: 50%;float: left;">
+
+       <!-- <div class="row ">-->
+           <!-- <div class="col col-50">
+                <img id="claseimagen"  src="img/logoA.png">
+            </div>-->
+         <!--  <h2>{{promociongol.Imagendepromocion}}</h2> -->
+
+
+            <div class="col"  >
+             <!-- <h2>{{promociongol.tid}}</h2> -->
+              <!-- <ion-gallery ion-gallery-items="items" ion-gallery-row="5"></ion-gallery> -->
+                 <div ng-bind-html="promociongol.Imagendepromocion"></div>
+            </div> 
+
+
+       <!-- </div>-->
+      </div>
+    </div>
+
+
+
+<!-- <ion-slide-box on-slide-changed="slideHasChanged($index)">
+    <ion-slide class="sliderborder">
+      
+     <div class="item item-body"  id="ImagenConten">
+        <img class="full-image" src="img/promociones/promo2-01.png">
+     </div>
+    </ion-slide>
+    <ion-slide class="sliderborder">
+        <br><br>
+          <div class="item item-body"  id="ImagenConten">
+            <img class="full-image" src="img/promociones/promo1-01.png">
+         </div>
+    </ion-slide>
+</ion-slide-box>
+
+
+
+<ion-slide-box on-slide-changed="slideHasChanged($index)">
+    <ion-slide class="sliderborder">
+      
+     <div class="item item-body"  id="ImagenConten">
+        <img class="full-image" src="img/promociones/promo2-01.png">
+     </div>
+    </ion-slide>
+    <ion-slide class="sliderborder">
+        <br><br>
+          <div class="item item-body"  id="ImagenConten">
+            <img class="full-image" src="img/promociones/promo1-01.png">
+         </div>
+    </ion-slide>
+</ion-slide-box>
+
+       
+ <ion-slide-box on-slide-changed="slideHasChanged($index)">
+    <ion-slide class="sliderborder">
+      
+     <div class="item item-body"  id="ImagenConten">
+        <img class="full-image" src="img/promociones/promo2-01.png">
+     </div>
+    </ion-slide>
+    <ion-slide class="sliderborder">
+        <br><br>
+          <div class="item item-body"  id="ImagenConten">
+            <img class="full-image" src="img/promociones/promo1-01.png">
+         </div>
+    </ion-slide>
+</ion-slide-box>       -->
+            
+    </ion-content>
+</ion-view>

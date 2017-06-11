@@ -1,0 +1,33 @@
+<ion-view view-title="Canchas" class="BuscarItemP">
+  <ion-content>
+    <div class="row ">
+                 <div class="col col-25 ban">
+                    <div  >
+                        <img class="imglogopantalla" style="" src="img/banderin.png" height="auto" width="auto">
+                   </div>
+                 </div>
+                 
+             </div>
+    
+   <div id="resultadobusqueda">
+    <div id="resultadobusquedaLetra">RESULTADO DE BUSQUEDA</div>
+   </div> 
+	<div class='list' id="itembusquedaprincipal">
+  <div ui-sref="InformacionCancha({tid:cancha.tid,diasemana:cancha.diasemana,horainicio:cancha.horainicio,horafin:cancha.horafin})" class="item row positive item-button-right" ng-repeat="cancha in canchas | orderBy:'info.tid' track by cancha.tid" item="cancha" id="itembusquedadiv">
+   <a class="item item-thumbnail-left" id="itembusquedadivinf">
+      <img src="img/logoA.png">
+      <h2>{{cancha.name}}</h2>
+      <!--<p>{{cancha.tid}}</p>-->
+    </a>
+  </div>
+	</div>
+  
+  
+   <div class="row" style="float: inherit;margin-left: 4%;">   
+           <div class="col ">
+                    <button type="button"  id="regresaitem"  ng-click="RegresaItem()"><span class="glyphicon glyphicon-ok"></span> Ingresar</button> 
+           </div>
+         </div>
+  
+  </ion-content>
+</ion-view>

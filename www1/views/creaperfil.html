@@ -1,0 +1,121 @@
+<ion-view  id="page1" class="CreaP" title="Inicio" >
+    <ion-content  >
+            
+             <div class="row ">
+                 <div class="col col-25 ban">
+                    <div>
+                        <img class="imglogopantalla" style="" src="img/banderin.png" height="auto" width="auto">
+                   </div>
+                 </div>
+                 <div class="col col-50" style="float: inherit;margin-top: 8%;margin-left: 5%;">
+                    <div  class="imglogo2">
+                       <img class="imglogopantalla" style="" src="img/BotonesMenu/perfil.png" height="auto" width="auto">
+                   </div>
+                 </div>
+                  <div class="col col-75  palabramenumargin">
+                    <button type="button"  id="palabramenu"  ng-click="regresar()"><span class="glyphicon glyphicon-ok"></span> Ingresar</button> 
+                  </div>
+             </div>
+            
+            
+            
+        
+       <div class="row ">
+          <div class="col col-50">
+                <div>
+                  <img class="imglogopantalla" style="" src="img/foto de perfil-01.png" height="auto" width="auto">
+               </div>
+           </div>
+                 
+                 <div >
+                      <div class="col" >
+                       <div class="input-label" id="labelcomboletra">
+                        Nombre
+                      </div>
+                        <div>
+                               <input type="text" name="nombre"  ng-model="crearperfil.nombre" style=" width: 90%;">
+                        </div>
+                       </div>
+                      <div class="col" >
+                        <div class="input-label" id="labelcomboletra">
+                           Apodo
+                      </div>
+                         <div>
+                            <input type="text" name="apodo"  ng-model="crearperfil.apodo" style=" width: 90%;">
+                        </div>
+                      </div>  
+                 </div>        
+        </div> 
+        
+        
+        
+            
+            
+            
+      <div class="row ">      
+            <div class="col col-25">
+                <div class="input-label" id="labelcomboletra">
+                 Numero de camiseta
+                </div>
+            </div>
+            
+            <div class="col col-75">
+                <div class="list" id="divcombo">
+                  <label for="SectorSeleccionada" class="item item-input item-select labelcombo">
+                     <select  ng-init="creaperfil.numcamiseta = numcamiseta[0]" id="comboestilo"  ng-model="creaperfil.numcamiseta"
+                     ng-options="camiseta as camiseta.nombre for camiseta in numcamiseta track by camiseta.idnum">
+                    </select>
+                  </label>
+                </div>
+            </div>  
+      </div>
+      
+      <div class="row ">
+        
+        <div class="col col-25">
+            <div class="input-label" id="labelcomboletra">
+                 Pierna hábil
+                </div>
+        </div>
+        <div class="col col-75">
+            <div class="list" id="divcombo">
+              <label class="item item-input item-select labelcombo">
+                 <select ng-init="creaperfil.pierna = pierna[0]" id="comboestilo"  ng-model="creaperfil.pierna"
+                 ng-options="opt as opt.nombre for opt in pierna"
+                 >
+                </select>
+              </label>
+            </div>
+        </div>   
+      </div>
+      
+      <div class="row ">
+        
+        <div class="col col-25">
+             <div class="input-label" id="labelcomboletra">
+                 Posición favorita
+            </div>
+        </div>
+        <div class="col col-75">
+            <div class="list" id="divcombo">
+              <label for="horafinSeleccionada" class="item item-input item-select labelcombo">
+                 <select ng-init="crearperfil.posicion = posicion[0]" id="comboestilo" name="singleSelect" ng-model="crearperfil.posicion"
+                 ng-options=" hf as hf.nombre for hf in posicion track by hf.idpos">
+                </select>
+              </label>
+            </div>
+        </div>   
+      </div>
+      
+      
+      
+      
+         <div class="row" style="text-align: -webkit-right;">   
+           <div class="col ">
+                    <button type="button"  id="creatuperfil"  ng-click="buscarCanchas()"><span class="glyphicon glyphicon-ok"></span> Ingresar</button> 
+           </div>
+         </div>
+           
+            
+    </ion-content>
+</ion-view>

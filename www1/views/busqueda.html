@@ -1,0 +1,77 @@
+<ion-view style="" id="page2" title="Productos">
+    <ion-content class="has-header" padding="true">
+	<br>
+	<br>
+		 <div style="text-align: center;">
+                <img style="" src="img/Producto.jpg" height="auto" width="auto">
+            </div>
+        <form style="" class="list">
+          <!--   <label style="" class="item item-select">
+                <span class="input-label">Producto</span>
+                <select>
+                    <option>Dermocosmética</option>
+                    <option>Pañales</option>
+					<option>Vitaminas y Minerales</option>
+                </select>
+            </label>
+            
+            <label style="" class="item item-select">
+                <span class="input-label">Item</span>
+                <select>
+                    <option>PAÑAL PANOLINI PLUS F-5 XGDEx20</option>
+                    <option>CREMA EUCERIN PH5 MANOSx75ML</option>
+					<option>TOALLITAS OPUS DESMAQ N-Mx25</option>
+                </select>
+            </label> -->
+
+
+
+              <div ng-controller="exerciseTypeCtrl">
+                  <!--   <ul data-role="listview" data-inset="true" > -->
+                     <!--    <li> -->
+                       <label style="" class="item item-select">
+                <span class="input-label">Prodcuto</span>
+                            <select 
+                            id="exerciseSuperCategory" 
+                            data-role="listview" 
+                            ng-options="catagory as catagory.text for catagory in catagories.cast " 
+                            ng-model="itemsuper" 
+                            ng-change="changeData()">
+                            </select>
+                             </label>
+                      <!--   </li> -->
+                   <!--  </ul>        -->
+                     <label style="" class="item item-select">
+                <span class="input-label">Item</span>
+                            <select 
+                            data-role="listview" 
+                            ng-options="type as type.text for type in types.cast " 
+                            ng-model="item1" 
+                            ng-change="update()">
+                            </select>
+                       </label>
+             </div>
+
+
+
+
+
+
+
+			 <label style="" class="item item-select">
+                <span class="input-label">Cantidad</span>
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+					<option>3</option>
+                </select>
+            </label>
+		<label class="item item-input item-stacked-label">
+		<span class="input-label">Descripción</span>
+			<textarea placeholder="Ingrese texto aqui">
+			</textarea>
+		</label>
+        </form>
+        <a class="button button-positive  button-block" id="busqueda-button3" ng-click="save()">Agregar</a>
+    </ion-content>
+</ion-view>
